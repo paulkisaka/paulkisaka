@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.heading{
+    background: rgb(2,0,36);
+background: linear-gradient(70deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 45%, rgba(26,111,129,1) 45%);
+color: white;
+padding-bottom: 60px;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+}
+h1{
+    color: aqua;
+}
+.navigation{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+a{
+    color: white;
+    transition: .6s;
+}
+a:hover{
+    color: aqua;
+    transform: scale(1.1);
+    transition: .6s;
+}
+input{
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+    border: 2px solid cyan;
+}
+button{
+    background-color: aqua;
+    position: relative;
+    right: 51px;
+    width: 50px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    top: 6px;
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+}
+.myself{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 40px;
+}
+.photo{
+    width: 550px;
+    height: 560px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: .6s;
+    animation-name: bounce;
+}
+.icons{
+    width: 10px;
+    height: 100px;
+}
+@keyframes bounce {
+    0%{
+        transform: translateY(50px);
+    }
+    100%{
+        transform: translateY(50px);
+    }
+}
+.photo:hover{
+    transform: scale(1.1);
+    border: 3px solid aqua;
+    box-shadow: 3px 3px 9px aqua ,-3px -3px 9px aqua;
+    transition: .6s;
+}
+.info{
+    font-size: xx-large;
+    padding-block: 30px;
+}
+.title{
+    color: aqua;
+    font-size: 70px;
+    font-weight: 700;
+}
+/*@media screen only (990px) {
+    .head{
+        display: flex;
+        flex-direction: column;
+    }
+}*/
